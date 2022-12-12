@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Converter</h1>
+    <div class="wrapper">
+      <div class="inputs">
+        <div class="w-100">
+          <!-- from Dropdown -->
+          <select id="from" class="input-field">
+            <option value="2">Binary</option>
+            <option value="8">octa</option>
+            <option value="10">decimal</option>
+            <option value="16">hexa</option>
+          </select>
+        </div>
+        <div class="w-100">
+          <!-- to dropdown -->
+          <select id="to" class="input-field">
+            <option value="2">Binary</option>
+            <option value="8">octa</option>
+            <option value="10">decimal</option>
+            <option value="16">hexa</option>
+          </select>
+        </div>
+      </div>
+      <!-- input field -->
+      <div class="w-100">
+        <input
+          type="text"
+          id="input-number"
+          placeholder="Enter your number"
+          class="input-field"
+        />
+      </div>
+      <!-- buttons -->
+      <div style="margin-top: 40px">
+        <button id="convert">Convert</button>
+        <button id="swap">Swap</button>
+      </div>
+      <!-- result box -->
+      <div id="result-box"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
